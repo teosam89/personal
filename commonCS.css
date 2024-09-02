@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    filter: none;
+}
+.container-1 a{
+    text-decoration: none;
+}
+.container-1 .head{
+    height: 90px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex: row;
+    width: 100%;
+    background-color: white;
+}
+.head .info{
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    font-size: 25px;
+    flex: 1;
+    margin-right: 10px;
+}
+.head .info .profile{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.head .info .notification{
+    margin: 20px;
+    margin-right: 60px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.head .info .notification svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head .info .notification:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.head .info .logout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.btn-logout{
+    padding: 0;
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.btn-logout:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.container-1 .logo{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 25px;
+    border-right: 1px solid black;
+}
+.container-1 .body{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+}
+.container-1 .head .category{
+    display: flex;
+    flex: 2;
+}
+.container-1 .head .category ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
+.container-1 .head .category a{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bold;
+}
+.color-1{
+    background-color: rgb(237, 59, 174);
+}
+.color-2{
+    background-color: rgb(28, 228, 129);
+}
+.color-3{
+    background-color: rgb(79, 115, 229);
+}
+.color-4{
+    background-color: rgb(255, 184, 0);
+}
+.container-1 .head .category ul li a:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.content{
+    display: flex;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.content h2{
+    color: black;
+    padding: 20px;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 35px;
+}
+.content .C{
+    color: rgb(237, 59, 174);
+}
+.programme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+.programme span{
+    width: fit-content;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 23px;
+}
+.programme-view{
+    display: flex;
+    width: 95%;
+    height: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(251, 3, 255, 0.068);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 0, 217, 0.155);
+}
+.programme-content h3{
+    margin-bottom: 0;
+}
+.programme-view .programme-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.programme-view .programme-Course{
+   display: flex;
+   flex-direction: row;
+   gap: 60px;
+   flex-wrap: wrap;
+}
+.programme-view .programme-Course .CourseName{
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    border: 1px black solid;
+    width: 35vw;
+    height: 40vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+.programme-view .programme-Course .CourseName h3{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programme-view .programme-Course .CourseName p{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    flex-grow: 1;
+}
+.programme-view .programme-Course .CourseName span{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 10%;
+    bottom: 10%;
+    margin: 0;
+    padding: 5px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 59, 174);
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px black;
+}
+.programme-view .programme-Course .CourseName span:hover{
+    background-color: black;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+.popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    background-color: azure;
+    height: 30vh;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow: auto;
+    filter: none;
+}
+.popup .window{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(142, 203, 243);
+    display: flex;
+    top: 0%;
+}
+.popup p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.popup .select{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 10%;
+    gap: 30px;
+}
+.popup .yes span{
+    display: flex;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    width: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+.popup .yes span:hover{
+    background-color: black;
+    color: white;
+    transition: 300ms ease;
+}
+.popup .no span{
+    display: flex;
+    border: 1px solid black;
+    background-color: gainsboro;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    width: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup .no span:hover{
+    background-color: black;
+    color: white;
+    transition: 300ms ease;
+}

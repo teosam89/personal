@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-1">
+        <div class="head">
+            <span class="logo"><a id="no" href="index.html" style="text-decoration: none; color: black; justify-content: center; align-items: center; text-align: center; display: flex; margin: 0; padding: 0;">EQIU</span></a>
+            <div class="info">
+                <span><img class="profile" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/640px-User_icon_2.svg.png"></svg></span>
+                <a href="#" style="cursor: auto;">Username</a>
+                <a href="#" class="notification"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg></a>
+                <div class="btn-logout"><a class="logout" onclick="opn()" style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#000000"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>Logout</a>
+                </div>
+            </div>
+            <div class="category">
+                <ul><li><a href="Course.html" class="color-1">My Course</a></li>
+                    <li><a href="#" class="color-2">E-Library</a></li>
+                    <li><a href="#" class="color-3">Financial</a></li>
+                    <li><a href="#" class="color-4">Contact</a></li>
+                </ul> 
+            </div>
+
+        </div>
+        <div class="body">
+            <div class="img">
+                <p>Welcome to Quest Student Portal</p>
+                <span onclick="opnNav()">Explore more ></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contain1">
+            <p class="b">Our Contact</p>
+            <p class="b">QIU Quest International University</p>
+            <p>No.227, Jalan Raja Permaisuri Bainun, 30250 Ipoh, Perak</p>
+        </div>
+        <div class="contain2">
+            <p class="b">Quick Links</p>
+            <ul>
+                <li>Latest Events</li>
+                <li>Terms and conditions</li>
+                <li>Privacy policy</li>
+                <li>Career</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="contain3">
+            <p class="b">Latest posts</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <p>Nesciunt architecto quaerat esse cumque nostrum, quibusdam, nobis fugit quas autem, rem perspiciatis aliquam. </p>
+        </div>
+        <div class="contain4">
+            <p class="b">Recent News</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil ipsa tempore reiciendis facere consequatur quibusdam vitae unde praesentium cumque, beatae nesciunt?</p>
+        </div>
+    </div>
+</body>
+<div class="popup">
+    <div class="window"></div>
+    <p>Are you sure you want to logout current account?</p>
+    <div class="select">
+    <div class="yes">
+        <a href="login.html" style="text-decoration: none;"><span onclick="clswindow()">Yes</span></a>
+    </div>
+    <div class="no">
+        <span onclick="clswindow()">No</span>
+    </div>
+    </div>
+</div>
+<div class="navigate">
+    <div class="appear">
+        <label onclick="clsNav()">X</label>
+        <a href="Course.html" class="Co"><span>My Course</span></a>
+        <a href="#" class="E"><span>E-Library</span></a>
+        <a href="#" class="F"><span>Financial</span></a>
+        <a href="#" class="C"><span>Contact</span></a>
+    </div>
+</div>
+<script>
+    function clswindow(){
+    const cls = document.querySelector('.popup');
+    cls.style.display = 'none';
+    const blur = document.querySelector('.container-1');
+    blur.style.filter = 'none';
+    const foot = document.querySelector('.footer');
+    foot.style.filter = 'none';
+    }
+    function opn(){
+        const opn = document.querySelector('.popup');
+        opn.style.display = 'flex';
+        const blur = document.querySelector('.container-1');
+        blur.style.filter = 'blur(5px)';
+        const foot = document.querySelector('.footer');
+        foot.style.filter = 'blur(5px)';
+    }
+    function clsNav(){
+        const clsNav = document.querySelector('.navigate');
+        clsNav.style.display = 'none';
+        const blur = document.querySelector('.container-1');
+        blur.style.filter = 'none';
+        const foot = document.querySelector('.footer');
+        foot.style.filter = 'none';
+    }
+    function opnNav(){
+        const opnNav = document.querySelector('.navigate');
+        opnNav.style.display = 'flex';
+        const blur = document.querySelector('.container-1');
+        blur.style.filter = 'blur(5px)';
+        const foot = document.querySelector('.footer');
+        foot.style.filter = 'blur(5px)';
+    }
+</script>
+</html>
